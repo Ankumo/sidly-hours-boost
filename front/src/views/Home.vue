@@ -48,6 +48,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../assets/global.less';
+
 .route-body {
     padding-top: 1rem;
 }
@@ -55,7 +57,7 @@
 .home-wrapper {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    .gap(1rem);
 }
 
 .header {
@@ -63,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    .gap(1rem);
 
     h3 {
         color: rgba(230, 230, 230, 0.95);
@@ -146,7 +148,13 @@
 
     .home-wrapper {
         flex-wrap: wrap;
-        gap: 2rem;
+        .gapTop(2rem);
+
+        @supports not (gap: 2rem) {
+            & > * + * {
+                margin-left: 0;
+            }
+        }
 
         .sidebar {
             flex: 0 0 100%;
@@ -154,7 +162,7 @@
             ul {
                 flex-direction: row;
                 flex-wrap: wrap;
-                gap: 1rem;
+                .gap(1rem);
 
                 li {
                     width: auto;

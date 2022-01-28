@@ -48,10 +48,12 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../../assets/global.less';
+
 .title {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
+    .gap(2rem);
 
     .dropdown {
         transform: translateX(-1rem);
@@ -93,6 +95,13 @@
 @media (max-width: 768px) {
     .title {
         flex-wrap: wrap;
+        .gapTop(2rem);
+
+        @supports not (gap: 2rem) {
+            & > * + * {
+                margin-left: 0;
+            }
+        }
 
         .settings {
             flex: 0 0 100%;

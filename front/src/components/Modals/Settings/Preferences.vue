@@ -21,11 +21,13 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../../assets/global.less';
+
 .preferences {
     form {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        .gapTop(1rem);
     }
 
     .input-group {

@@ -33,6 +33,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .modal {
     &:deep(.modal-wrapper) {
         width: 400px;
@@ -44,7 +46,7 @@
         form {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            .gapTop(1rem);
             align-items: center;
 
             input {

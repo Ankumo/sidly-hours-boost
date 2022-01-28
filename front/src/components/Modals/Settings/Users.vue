@@ -58,6 +58,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../../assets/global.less';
+
 .users {
     position: relative;
     max-height: 300px;
@@ -117,7 +119,7 @@
             td:last-child {
                 display: flex;
                 align-items: center;
-                gap: 0.75rem;
+                .gap(0.75rem);
                 opacity: 0;
                 transition: opacity 0.3s;
 

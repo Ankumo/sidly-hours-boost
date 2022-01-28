@@ -21,6 +21,8 @@
 </template>
 
 <style scoped lang="less">
+@import (reference) '../../assets/global.less';
+
 .loader {
     display: flex;
     align-items: center;
@@ -42,7 +44,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        .gapTop(1rem);
     }
 
     h3 {

@@ -23,10 +23,13 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .form {
     display: inline-flex;
-    gap: 2rem;
     margin: 2rem;
+
+    .gap(2rem);
 }
 
 @media (max-width: 768px) {
@@ -39,7 +42,7 @@
         right: 0;
         bottom: 0;
         flex-direction: column;
-        gap: 1.25rem;
+        .gapTop(1.25rem);
         align-items: center;
         justify-content: center;
 

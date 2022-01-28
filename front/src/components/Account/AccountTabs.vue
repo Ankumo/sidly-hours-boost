@@ -19,6 +19,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .account-tabs {
     margin-top: 4rem;
 
@@ -27,7 +29,7 @@
         list-style: none;
         width: 100%;
         align-items: center;
-        gap: 1rem;
+        .gap(1rem);
         color: rgba(255, 255, 255, 0.65);
         transform: translateX(-1rem);
 

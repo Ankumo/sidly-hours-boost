@@ -38,6 +38,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../../assets/global.less';
+
 .share {
     .text {
         color: rgba(255, 255, 255, 0.65);
@@ -48,7 +50,7 @@
 
     .add-user {
         display: flex;
-        gap: 2rem;
+        .gap(2rem);
         align-items: center;
         margin-bottom: 2rem;
         flex-wrap: wrap;
@@ -61,7 +63,7 @@
 
         .users-list {
             display: flex;
-            gap: 1rem;
+            .gap(1rem);
             flex-wrap: wrap;
             align-items: center;
         }

@@ -19,9 +19,9 @@
     background: var(--form-bg);
     color: #b9bac1;
     transition: background 0.3s, box-shadow 0.4s;
-    backdrop-filter: blur(20px);
     box-shadow: 0 0 0 0 var(--form-bg);
     box-sizing: border-box;
+    user-select: initial;
 
     &:focus {
         outline: none;

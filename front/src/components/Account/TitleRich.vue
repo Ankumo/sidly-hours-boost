@@ -88,9 +88,11 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .title-rich {
     display: flex;
-    gap: 1rem;
+    .gapTop(1rem);
     flex-direction: column;
     width: 350px;
 
@@ -122,7 +124,7 @@
     .ph-group {
         display: inline-flex;
         flex-direction: column;
-        gap: 1rem;
+        .gapTop(1rem);
         margin-top: 1rem;
 
         h5 {
@@ -133,13 +135,13 @@
         ul {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            .gapTop(1rem);
             margin-left: 1rem;
 
             li {
                 display: inline-flex;
                 flex-direction: column;
-                gap: 0.35rem;
+                .gapTop(0.35rem);
 
                 span {
                     color: rgba(255, 255, 255, 0.65);

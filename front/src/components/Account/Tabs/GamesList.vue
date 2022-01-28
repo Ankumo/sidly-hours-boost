@@ -59,6 +59,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../../assets/global.less';
+
 .games {
     transform: translateX(-2rem);
     width: 100%;
@@ -84,7 +86,7 @@
 .search-group {
     display: inline-flex;
     align-items: center;
-    gap: 1rem;
+    .gap(1rem);
     margin-bottom: 2rem;
 
     .dropdown:deep(b) {
@@ -95,7 +97,7 @@
 .dropdown-group {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    .gap(1rem);
 }
 
 .selector {
@@ -125,6 +127,13 @@
         align-items: center;
         width: 100%;
         margin-bottom: 1rem;
+        .gapTop(1rem);
+
+        @supports not (gap: 1rem) {
+            & > * + * {
+                margin-left: 0;
+            }
+        }
 
         .search {
             width: 100%;

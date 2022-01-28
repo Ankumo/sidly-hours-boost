@@ -45,6 +45,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .account-card {
     text-decoration: none;
     position: relative;
@@ -101,13 +103,13 @@
     display: inline-flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1rem;
+    .gap(1rem);
     width: 100%;
 
     .info {
         display: inline-flex;
         flex-direction: column;
-        gap: 0.125rem;
+        .gapTop(0.125rem);
         overflow: hidden;
         flex: 0 0 calc(100% - 1rem - 100px);
 
@@ -165,7 +167,7 @@
         }
 
         .info {
-            gap: 0;
+            .gapTop(0);
             flex: 0 0 calc(100% - 1rem - @avatarNewSize);
         }
     }

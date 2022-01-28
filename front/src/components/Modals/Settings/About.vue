@@ -15,6 +15,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../../assets/global.less';
+
 @keyframes emoji {
     0% {
         background-position: 0% 0%;
@@ -29,7 +31,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    .gapTop(2rem);
     padding-bottom: 2rem;
 
     .by {
@@ -64,7 +66,7 @@
 
     .links {
         display: inline-flex;
-        gap: 2rem;
+        .gap(2rem);
         list-style: none;
 
         li {

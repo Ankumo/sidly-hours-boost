@@ -23,6 +23,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .accounts-list {
     width: 100%;
     position: relative;
@@ -67,18 +69,28 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        .gap(1rem);
         align-items: flex-start;
 
         li {
             flex: 0 0 calc(50% - 0.5rem);
             overflow: hidden;
         }
+    }
+}
 
-        @media (max-width: 992px) {
-            li {
-                flex: 0 0 100%;
+@media (max-width: 992px) {
+    .tab ul {
+        .gapTop(1rem);
+
+        @supports not (gap: 1rem) {
+            & > * + * {
+                margin-left: 0;
             }
+        }
+
+        li {
+            flex: 0 0 100%;
         }
     }
 }

@@ -70,6 +70,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .avatar-group {
     position: relative;
     min-height: 100%;
@@ -96,7 +98,7 @@
     display: flex;
     color: white;
     position: relative;
-    gap: 2rem;
+    .gap(2rem);
 
     .info {
         display: inline-flex;
@@ -106,7 +108,7 @@
         .btn-group {
             margin-top: auto;
             display: inline-flex;
-            gap: 2rem;
+            .gap(2rem);
         }
     }
 
@@ -154,7 +156,7 @@
     @avatarSize: 125px;
 
     .header {
-        gap: 1rem;
+        .gap(1rem);
 
         .avatar-group .avatar {
             width: @avatarSize;
@@ -169,7 +171,7 @@
             }
 
             .btn-group {
-                gap: 1rem;
+                .gap(1rem);
                 flex-wrap: wrap;
             }
         }
@@ -180,7 +182,7 @@
     @avatarSize: 92px;
 
     .header {
-        gap: 0;
+        .gap(0);
 
         .name-group {
             min-height: @avatarSize;
@@ -210,9 +212,6 @@
             }
         }
     }
-}
-
-@media (max-width: 450px) {
 }
 </style>
 

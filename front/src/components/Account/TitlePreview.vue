@@ -19,6 +19,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .preview {
     @windowBg: #23262d;
 
@@ -45,7 +47,7 @@
 
     .profile {
         display: flex;
-        gap: 0.5rem;
+        .gap(0.5rem);
         padding: 0.5rem;
         position: relative;
         box-sizing: border-box;
@@ -65,7 +67,7 @@
 
             display: flex;
             flex-direction: column;
-            gap: 0.15rem;
+            .gapTop(0.15rem);
             align-self: flex-end;
             margin-bottom: 4px;
             max-width: @maxWidth;
@@ -91,7 +93,7 @@
                 font-weight: 300;
                 display: inline-flex;
                 align-items: center;
-                gap: 0.5rem;
+                .gap(0.5rem);
 
                 &::after {
                     content: '';

@@ -38,6 +38,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .search {
     position: relative;
     width: 400px;
@@ -47,7 +49,7 @@
     transition: box-shadow 0.3s;
     padding-right: 1rem;
     align-items: center;
-    gap: 0.5rem;
+    .gap(0.5rem);
 
     .input {
         width: 100%;

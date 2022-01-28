@@ -38,11 +38,13 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../../assets/global.less';
+
 .change-password {
     form {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        .gapTop(1rem);
 
         input {
             width: 100%;

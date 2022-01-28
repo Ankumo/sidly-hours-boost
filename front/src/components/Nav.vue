@@ -33,6 +33,8 @@
 </template>
 
 <style scoped lang="less">
+@import (reference) '../assets/global.less';
+
 .nav {
     background: #171a2177;
     padding: 1.25rem 1rem 1.25rem 0;
@@ -94,7 +96,7 @@
         display: inline-flex;
         align-items: center;
         margin-left: auto;
-        gap: 1rem;
+        .gap(1rem);
 
         .sign-out {
             width: 22px;

@@ -54,11 +54,13 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .modal {
     &:deep(.modal-body) {
         margin: 1rem 0;
         display: flex;
-        gap: 0.5rem;
+        .gap(0.5rem);
 
         .tabs {
             flex: 0 0 150px;
@@ -135,10 +137,11 @@
         }
 
         &:not(.sidebar):deep(.modal-body) {
-            gap: 1rem;
+            .gap(1rem);
 
             .back {
                 display: inline-block;
+                margin-left: 0;
             }
 
             .tabs {

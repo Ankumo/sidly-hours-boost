@@ -13,10 +13,12 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .locale-select {
     list-style: none;
     display: inline-flex;
-    gap: 2rem;
+    .gap(2rem);
     position: absolute;
     left: 2rem;
     bottom: 2rem;

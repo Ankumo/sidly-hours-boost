@@ -6,12 +6,14 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .share-user {
     background: var(--form-bg);
     padding: 0.625rem 1rem;
     border-radius: 4px;
     display: inline-flex;
-    gap: 1rem;
+    .gap(1rem);
     align-items: center;
 
     span {

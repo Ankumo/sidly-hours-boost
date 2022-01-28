@@ -8,13 +8,15 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../assets/global.less';
+
 .route-body {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    .gapTop(2rem);
 
     .logo {
         width: 200px;

@@ -14,6 +14,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .modal {
     &:deep(.modal-body) {
         color: rgba(255, 255, 255, 0.75);
@@ -26,7 +28,7 @@
     &:deep(.modal-footer) {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        .gap(1rem);
         justify-content: flex-end;
     }
 }

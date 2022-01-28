@@ -13,11 +13,13 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../assets/global.less';
+
 .checkbox {
     position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
+    .gap(0.4rem);
     cursor: pointer;
     color: rgba(255, 255, 255, 0.65);
     transition: color 0.3s;

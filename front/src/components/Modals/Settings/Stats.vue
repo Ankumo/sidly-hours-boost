@@ -46,6 +46,8 @@
 </template>
 
 <style lang="less" scoped>
+@import (reference) '../../../assets/global.less';
+
 .stats {
     min-height: 150px;
     position: relative;
@@ -71,7 +73,7 @@
 
     .stats-wrapper {
         display: flex;
-        gap: 1rem;
+        .gapTop(1rem);
         flex-direction: column;
 
         .stats-group {
