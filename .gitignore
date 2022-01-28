@@ -1,0 +1,4 @@
+config.dev.json
+*.sqlite
+dist
+.vscode

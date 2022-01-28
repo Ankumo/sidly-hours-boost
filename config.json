@@ -1,0 +1,14 @@
+{
+    "rootUser": "root",
+    "cookieLifetime": 604800,
+    "steamApiKey": "<Your Steam Web API token key goes here>",
+    "kickTimeout": 1800,
+    "maxActiveBotsPerUser": 5,
+    "maxBotsPerUser": 50,
+    "maxActiveBotsOnServer": 35,
+    "updateAppsInfo": true,
+    "domain": "",
+    "runBotsAtStartup": true,
+    "maxAppsPerAccount": 150,
+    "keepAlivePing": 60
+}
